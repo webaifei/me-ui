@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <title>钱包ui样式示例</title>
+  <script src="../scripts/rem.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="/styles/wallet-ui.css">
+</head>
+<body>
+    <nav class="ui-container border-b clearfix">
+      <a href="index.html" class="fl">WALLET</a>
+      <a href="javascript:;" class="fr nav-toggle">导航</a>
+    </nav>
+    <ul class="hidden nav-panel">
+      <li>
+        <a href="./demo1.html">基本样式</a>
+      </li>
+      <li>
+        <a href="./demo2.html">按钮</a>
+      </li>
+      <li>
+        <a href="./demo3.html">弹窗</a>
+      </li>
+      <li>
+        <a href="./demo4.html">icons</a>
+      </li>
+      <li>
+        <a href="./demo5.html">表单</a>
+      </li>
+      <li>
+        <a href="./demo6.html">列表单元 cell</a>
+      </li>
+    </ul>
+
+
+    <p class="item border-t text-white ui-container" style="background:rgb(73, 73, 73)">
+      1. wallet-ui全局（body上）设置了<code>font-size: 14px; line-height: 1.6;</code> <br>
+      2. h1-h5都去掉了加粗的效果，并且没有默认的margin,padding都初始化为0 <br>
+      3. 为了扩展性，提供了多种属性单一设置类，建议采用组合的方式去实现自己的效果
+    </p>
+    <div class="item border-t">
+
+      <h1>h1 .h1样式 17px</h1>
+    </div>
+    <div class="item border-t">
+      <h2>h2 .h2样式 16px</h2>
+    </div>
+    <div class="item border-t">
+      <h3>h3 .h3样式 15px</h3>
+    </div>
+    <div class="item border-t"><h4>h4 .h4样式 14px</h4></div>
+    <div class="item border-t">
+      <h5>h5 .h5样式 12px</h5>
+    </div>
+    <div class="item border-t">
+      <p>文本段落,文本段落,文本段落sjs你史蒂夫史蒂夫，文本段落sjs你史蒂夫史蒂夫文本段落sjs你史蒂夫史蒂夫文本段落sjs你史蒂夫史蒂夫</p>
+    </div>
+
+
+    <div class="item border-t">
+      <a href="javascript:;">链接</a>
+    </div>
+    <div class="item border-t">
+      <small>文本small .small 12px </small>
+    </div>
+    <div class="item border-t">
+      <strong>加粗样式 strong .strong</strong>
+    </div>
+    <div class="item border-t"><b>斜体 b .italics</b></div>
+    <div class="item border-t"><sub>辅助提示信息 sub .sub</sub></div>
+    <!-- 对齐 -->
+    <div class="item border-t">
+      <p class="text-left">文本左对齐 .text-left</p>
+    </div>
+    <div class="item border-t">
+      <p class="text-right">文本右对齐 .text-right</p>
+    </div>
+    <div class="item border-t">
+      <p class="text-center">文本水平居中 .text-center</p>
+    </div>
+    <div class="item border-t">
+      <p class="text-justify">文本两端对齐 .text-justify</p>
+    </div>
+    <!-- 文字颜色 -->
+    <div class="item border-t">
+      <p class="text-error">重要文字颜色（#f15353）.text-error 或者 .text-important</p>
+    </div>
+    <div class="item border-t">
+      <p class="text-default">默认主体颜色(#333).text-default</p>
+    </div>
+    <div class="item border-t">
+      <p class="text-tip">辅助提示信息(#999).text-tip</p>
+    </div>
+    <div class="item border-t">
+      <p class="ellipsis">单行省略号：.ellipsis 很多文字很多文字很多文字很多文字很多文字很多文字</p>
+    </div>
+    <div class="item border-t">
+      <p class="ellipsis2">两行省略号：.ellipsis2 很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字</p>
+    </div>
+    <div class="item border-t">
+      <p class="text-lowercase">.text-lowercase</p>
+    </div>
+    <div class="item border-t">
+      <p class="text-uppercase">.text-uppercase</p>
+    </div>
+    <div class="item border-t">
+      <p class="text-capitalize">.text-capitalize</p>
+    </div>
+
+    <article class="item border-t">
+      <h1 class="text-center">布局演示</h1>
+      <h2>h2标题 <sub class="">副标题</sub></h2>
+      <p class="small">
+        1.在电脑端进入京东商城主页，登陆个人京东账户；<br>
+2.登录后，找到“我的订单”项；<br>
+3.选择需要申请售后的商品，点击“返修/退换货”按钮进入发起售后页；<br>
+4.按照页面引导，提交想要进行售后服务商品的售后申请；<br>
+5.售后申请提交后，可在“我的京东>客户服务>返修退换货”中查看返修/退换货记录并跟踪处理情况。
+      </p>
+      <a href="javacsript:;" class="small">查看详情</a>
+    </article>
+
+</body>
+<script>
+var navToggleBtn = document.querySelector('.nav-toggle'),
+    navPanel = document.querySelector('.nav-panel');
+navToggleBtn.addEventListener('click', function (){
+  var _class = navPanel.className;
+  var isHidden = _class.indexOf('hidden')>-1;
+  isHidden?(navPanel.className = _class.replace('hidden', '')):(navPanel.className = _class+' hidden')
+}, false)
+</script>
+</html>

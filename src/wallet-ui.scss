@@ -1,0 +1,14 @@
+@import "./mixin/mixin.scss";
+@import "./variables/index.scss";
+@import "./reset.scss";
+
+@import './widgets/type/type.scss';
+@import './widgets/type/layout.scss';
+@import './widgets/button/button.scss';
+@import "./widgets/dialog/dialog.scss";
+@import "./widgets/icons/icon.scss";
+@import "./widgets/flex/flex.scss";
+@import './widgets/cell/cell.scss';
+@import "./widgets/form/form.scss";
+
+@import './widgets/border/border.scss';

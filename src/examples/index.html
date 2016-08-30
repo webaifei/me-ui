@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <title>钱包ui样式示例</title>
+  <script src="../scripts/rem.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="/styles/wallet-ui.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="ui-container clearfix border-b">
+      <a href="index.html" class="fl">WALLET</a>
+      <a href="javascript:;" class="fr nav-toggle">导航</a>
+    </nav>
+    <ul class="hidden nav-panel">
+      <li>
+        <a href="./demo1.html">基本样式</a>
+      </li>
+      <li>
+        <a href="./demo2.html">按钮</a>
+      </li>
+      <li>
+        <a href="./demo3.html">弹窗</a>
+      </li>
+      <li>
+        <a href="./demo4.html">icons</a>
+      </li>
+      <li>
+        <a href="./demo-flex.html">flex 布局</a>
+      </li>
+      <li>
+        <a href="./demo5.html">表单</a>
+      </li>
+      <li>
+        <a href="./demo6.html">列表单元 cell</a>
+      </li>
+    </ul>
+
+    <div class="header header-linear text-center">
+
+      <h1 class="text-capitalize text-white" style="font-size: 40px;">wallet ui</h1>
+      <p class="text-white">
+        钱包前端ui库
+      </p>
+    </div>
+  </div>
+</body>
+<script>
+  var navToggleBtn = document.querySelector('.nav-toggle'),
+      navPanel = document.querySelector('.nav-panel');
+  navToggleBtn.addEventListener('click', function (){
+    var _class = navPanel.className;
+    var isHidden = _class.indexOf('hidden')>-1;
+    isHidden?(navPanel.className = _class.replace('hidden', '')):(navPanel.className = _class+' hidden')
+  }, false)
+</script>
+</html>

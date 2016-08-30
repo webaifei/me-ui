@@ -1,0 +1,137 @@
+/*
+
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+
+*/
+pre{
+  margin-top:15px;
+}
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #23241f;
+}
+
+.hljs,
+.hljs-tag,
+.hljs-subst {
+  color: #f8f8f2;
+}
+
+.hljs-strong,
+.hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+  color: #ae81ff;
+}
+
+.hljs-code,
+.hljs-title,
+.hljs-section,
+.hljs-selector-class {
+  color: #a6e22e;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-attr {
+  color: #f92672;
+}
+
+.hljs-symbol,
+.hljs-attribute {
+  color: #66d9ef;
+}
+
+.hljs-params,
+.hljs-class .hljs-title {
+  color: #f8f8f2;
+}
+
+.hljs-string,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-variable {
+  color: #e6db74;
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e;
+}
+
+/*examples css*/
+ul{
+  padding: 15px;
+}
+li{
+  line-height: 24px;
+  font-size: 16px;
+}
+nav{
+  line-height: 50px;
+}
+.item{
+  padding:.2rem .3rem;
+}
+.header{
+  padding: 80px 0;
+}
+.header-linear{
+  background-color: #f15353;
+  background-image: -webkit-linear-gradient(to bottom, #f15353 0, #f77b7b 100%);
+  background-image: linear-gradient(to bottom, #f15353 0, #f77b7b 100%);
+}
+
+.copy{
+  border-radius: 3px;
+  background: rgb(74, 74, 74);
+  padding: 0 5px;
+  color: #fff;
+  margin-top:-20px;
+  cursor: pointer;
+}
+.your-own-class{
+  font-size: 60px;
+  color: #33cc69;
+}
+.hd{
+  padding:.2rem .3rem;
+  /*background: #ccc;*/
+}
+.goods-img{
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.goods-title{
+  line-height: 1.2; /*行高不要使用rem，在行高小于font-size 的时候 使用ellipsis会有问题*/
+  margin-bottom: .1rem;
+}
+.goods-desc{
+  margin-bottom: .2rem;
+}
+.

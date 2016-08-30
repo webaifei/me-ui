@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <title>钱包ui样式示例</title>
+  <script src="../scripts/rem.js" charset="utf-8"></script>
+  <style>
+  body{
+    background: #eeeeee;
+  }
+
+  </style>
+  <link rel="stylesheet" href="/styles/wallet-ui.css">
+  <link rel="stylesheet" href="../css/default.css">
+</head>
+<!--  -->
+<body ontouchstart>
+  <nav class="ui-container border-b clearfix">
+    <a href="index.html" class="fl">WALLET</a>
+    <a href="javascript:;" class="fr nav-toggle">导航</a>
+  </nav>
+  <ul class="hidden nav-panel">
+    <li>
+      <a href="./demo1.html">基本样式</a>
+    </li>
+    <li>
+      <a href="./demo2.html">按钮</a>
+    </li>
+    <li>
+      <a href="./demo3.html">弹窗</a>
+    </li>
+    <li>
+      <a href="./demo4.html">icons</a>
+    </li>
+    <li>
+      <a href="./demo5.html">表单</a>
+    </li>
+    <li>
+      <a href="./demo6.html">列表单元 cell</a>
+    </li>
+  </ul>
+  <div class="container">
+    <div class="item">
+      <p class="text-link">
+        默认样式
+      </p>
+      <a href="javascript:;" class="btn">按钮 .btn</a>
+      <pre><code class="">
+          <button  class="copy fr">复制</button>
+          &lt;a href="javascript:;" class="btn"&gt;
+          按钮 .btn
+          &lt;/a&gt;
+        </code></pre>
+    </div>
+    <div class="item">
+      <p class="text-link">
+        默认样式 添加border .border
+      </p>
+      <a href="javascript:;" class="btn border">按钮 .btn.border</a>
+      <pre><code class="">
+          <button  class="copy fr">复制</button>
+          &lt;a href="javascript:;" class="btn border"&gt;
+          按钮 .btn.border
+          &lt;/a&gt;
+        </code></pre>
+    </div>
+    <div class="item">
+      <p class="text-link">
+        .btn-primary
+      </p>
+      <a href="javascript:;" class="btn btn-primary active">按钮 .btn.btn-primary</a>
+      <pre><code>
+        <button  class="copy fr">复制</button>
+        &lt;a href="javascript:;" class="btn btn-primary active"&gt;
+        按钮 .btn.btn-primary
+        &lt;/a&gt;
+      </code></pre>
+    </div>
+    <div class="item">
+      <p class="text-link">
+        .btn-success
+      </p>
+      <a href="javascript:;" class="btn btn-success">按钮 .btn.btn-success</a>
+      <pre><code>
+        <button  class="copy fr">复制</button>
+        &lt;a href="javascript:;" class="btn btn-success"&gt;
+        按钮 .btn.btn-success
+        &lt;/a&gt;
+      </code></pre>
+    </div>
+    <div class="item">
+      <p class="text-link">
+        .btn-disabled
+      </p>
+      <a href="javascript:;" class="btn btn-disabled">按钮 .btn.btn-disabled</a>
+      <pre><code>
+        <button  class="copy fr">复制</button>
+        &lt;a href="javascript:;" class="btn btn-disabled"&gt;
+        按钮 .btn.btn-disabled
+        &lt;/a&gt;
+      </code></pre>
+    </div>
+    <p class="text-link item">行内按钮</p>
+    <div class="btn-group item">
+      <a href="javascript:;" class="btn btn-small">.btn.btn-small</a>
+      <a href="javascript:;" class="btn btn-small btn-primary"> .btn.btn-small.btn-primary</a>
+      <a href="javascript:;" class="btn btn-small btn-success"> .btn.btn-small.btn-success</a>
+      <a href="javascript:;" class="btn btn-small btn-disabled"> .btn.btn-small.btn-disabled</a>
+    </div>
+  </div>
+  <div class="item">
+    <p class="text-link">
+      .btn-rect 去掉圆角
+    </p>
+    <a href="javascript:;" class="btn btn-rect border-t">按钮 .btn.btn-full.border-t</a>
+    <pre><code>
+      <button  class="copy fr">复制</button>
+      &lt;a href="javascript:;" class="btn btn-rect border-t"&gt;
+      按钮 .btn.btn-full.border-t
+      &lt;/a&gt;
+    </code></pre>
+  </div>
+  <div class="item">
+    <p class="text-link">
+      .btn-rect.btn.btn-success 组合使用
+    </p>
+    <a href="javascript:;" class="btn btn-rect btn-success">按钮 .btn.btn-full.btn-success</a>
+    <pre><code>
+      <button  class="copy fr">复制</button>
+      &lt;a href="javascript:;" class="btn btn-rect btn-success"&gt;
+      按钮 .btn.btn-full.btn-success
+      &lt;/a&gt;
+    </code></pre>
+  </div>
+
+
+</body>
+<script src="../scripts/highlight.js" charset="utf-8"></script>
+<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js" charset="utf-8"></script>
+<script src="../scripts/zeroclipboard.js" charset="utf-8"></script>
+<script>
+$(document).ready(function() {
+  var navToggleBtn = document.querySelector('.nav-toggle'),
+      navPanel = document.querySelector('.nav-panel');
+  navToggleBtn.addEventListener('click', function (){
+    var _class = navPanel.className;
+    var isHidden = _class.indexOf('hidden')>-1;
+    isHidden?(navPanel.className = _class.replace('hidden', '')):(navPanel.className = _class+' hidden')
+  }, false)
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+
+  });
+  // console.log(document.getElementById('copy'))
+  var client = new ZeroClipboard( document.getElementsByClassName('copy') );
+  client.on( "ready", function( readyEvent ) {
+    client.on( "copy", function( event ){
+      // `this` === `client`
+      // `event.target` === the element that was clicked
+      // event.target.style.display = "none";
+      var clipboard = event.clipboardData;
+      var str = $(event.target).parents('.item').find('a.btn')[0].outerHTML;
+      console.log(str)
+      clipboard.setData( "text/plain",str );
+    } );
+    client.on( 'aftercopy', function(event) {
+      console.log('Copied text to clipboard: ' + event.data['text/plain']);
+       } );
+  } );
+});
+</script>
+</html>

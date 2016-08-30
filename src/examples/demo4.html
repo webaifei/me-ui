@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <title>钱包ui 弹窗</title>
+  <script src="../scripts/rem.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="/styles/wallet-ui.css">
+  <link rel="stylesheet" href="../css/default.css">
+
+  <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js" charset="utf-8"></script>
+</head>
+<body>
+  <nav class="ui-container border-b clearfix">
+    <a href="index.html" class="fl">WALLET</a>
+    <a href="javascript:;" class="fr nav-toggle">导航</a>
+  </nav>
+  <ul class="hidden nav-panel">
+    <li>
+      <a href="./demo1.html">基本样式</a>
+    </li>
+    <li>
+      <a href="./demo2.html">按钮</a>
+    </li>
+    <li>
+      <a href="./demo3.html">弹窗</a>
+    </li>
+    <li>
+      <a href="./demo4.html">icons</a>
+    </li>
+    <li>
+      <a href="./demo5.html">表单</a>
+    </li>
+    <li>
+      <a href="./demo6.html">列表单元 cell</a>
+    </li>
+  </ul>
+  <div class="ui-container">
+    <h1 class="text-center">图标</h1>
+    <h3>使用font-face 实现，使用阿里的iconfont实现</h3>
+    <p class="small strong">当前设想：考虑到当前的icon不是很多 所以不会区分项目选择icon，大家都默认全引入（全部包含在wallet-ui.css中）。
+      需要添加新的icon时候， 让设计师提供AI格式，上传到iconfont,重新生成对应的文件，并且发布到线上</p>
+    <p class="text-tip">参考网址：<a href="http://iconfont.com/">http://iconfont.com/</a></p>
+
+  </div>
+  <ul style="margin-top:20px; padding:0;">
+    <li class="item border-t">
+      <i class="iconfont icon-arrow-right"></i> <code>.iconfont.icon-arrow-right</code>
+    </li>
+    <li class="item border-t">
+      <i class="iconfont icon-arrow-left"></i> <code>.iconfont.icon-arrow-left</code>
+    </li>
+    <li class="item border-t">
+      <i class="iconfont icon-arrow-up"></i> <code>.iconfont.icon-arrow-up</code>
+    </li>
+    <li class="item border-t">
+      <i class="iconfont icon-arrow-down"></i> <code>.iconfont.icon-arrow-down</code>
+    </li>
+
+    <li class="item border-t">
+      <i class="iconfont icon-back"></i> <code>.iconfont.icon-back</code>
+    </li>
+    <li class="item border-t">
+      <i class="iconfont icon-forward"></i> <code>.iconfont.icon-forward</code>
+    </li>
+    <li class="item border-t"><i class="iconfont icon-tip"></i><code>.iconfont.icon-tip</code></li>
+    <li class="item border-t">
+      <i class="iconfont icon-star"></i> <code>.iconfont.icon-star</code>
+    </li>
+    <li class="item border-t">
+      <i class="iconfont icon-back-top icon-middle"></i> <code>.iconfont.icon-back-top.icon-middle(40px)</code>
+    </li>
+    <li class="item border-t">
+      <i class="iconfont icon-search"></i> <code>.iconfont.icon-search</code>
+    </li>
+    <li class="item border-t">
+      <i class="iconfont icon-position"></i> <code>.iconfont.icon-position</code>
+    </li>
+    <li class="item border-t">
+      <i class="iconfont icon-plus"></i> <code>.iconfont.icon-plus</code>
+    </li>
+    <li class="item border-t">
+      <i class="iconfont icon-reduce"></i> <code>.iconfont.icon-reduce</code>
+    </li>
+    <li class="item border-t">
+      <i class="iconfont icon-close icon-middle"></i> <code>.iconfont.icon-close.icon-middle</code>
+    </li>
+    <li class="item border-t" style="line-height: 40px;">
+      <i class="iconfont icon-ok icon-middle"></i> <code>.iconfont.icon-ok.icon-middle</code>
+    </li>
+    <li class="item border-t" style="line-height: 40px;">
+      <p>修改大小和颜色 自定义自己的样式:修改<code>font-size</code> 和 <code>color</code>属性即可</p>
+      <hr>
+      <br>
+      <i class="iconfont icon-ok your-own-class"></i> <code>.iconfont.icon-ok.your-own-class</code>
+    </li>
+  </ul>
+</body>
+<script>
+var navToggleBtn = document.querySelector('.nav-toggle'),
+    navPanel = document.querySelector('.nav-panel');
+navToggleBtn.addEventListener('click', function (){
+  var _class = navPanel.className;
+  var isHidden = _class.indexOf('hidden')>-1;
+  isHidden?(navPanel.className = _class.replace('hidden', '')):(navPanel.className = _class+' hidden')
+}, false)
+</script>
+
+</html>

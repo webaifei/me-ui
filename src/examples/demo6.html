@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <title>钱包ui 表单</title>
+  <script src="../scripts/rem.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="/styles/wallet-ui.css">
+</head>
+<body>
+  <nav class="ui-container border-b clearfix">
+    <a href="index.html" class="fl">WALLET</a>
+    <a href="javascript:;" class="fr nav-toggle">导航</a>
+  </nav>
+  <ul class="hidden nav-panel">
+    <li>
+      <a href="./demo1.html">基本样式</a>
+    </li>
+    <li>
+      <a href="./demo2.html">按钮</a>
+    </li>
+    <li>
+      <a href="./demo3.html">弹窗</a>
+    </li>
+    <li>
+      <a href="./demo4.html">icons</a>
+    </li>
+    <li>
+      <a href="./demo5.html">表单</a>
+    </li>
+    <li>
+      <a href="./demo6.html">列表单元 cell</a>
+    </li>
+  </ul>
+    <h1 class="text-center">列表项cell</h1>
+    <p class="hd text-link">基础列表 </p>
+    <div class="wallet-list border-tb">
+      <p class="wallet-cell">河北</p>
+    </div>
+
+    <p class="hd text-link">地址选择列表</p>
+    <ul id="addresslist" class="wallet-list border-tb">
+      <li class="wallet-cell border-b">
+        <a href="javascript:;" class="cell-content text-default">北京</a>
+      </li>
+      <li class="wallet-cell border-b">
+        <p href="javascript:;" class="cell-content">上海</p>
+      </li>
+      <li class="wallet-cell border-b">
+        <p href="javascript:;" class="cell-content">天津</p>
+      </li>
+      <li class="wallet-cell border-b">
+        <p href="javascript:;" class="cell-content">重庆</p>
+      </li>
+    </ul>
+    <p class="hd text-link">带有说明文字的</p>
+    <div class="wallet-list border-tb">
+      <div class="wallet-cell ">
+        <div class="wallet-cell-info ">订单号：1234567890</div>
+        <span class="text-tip ">待付款</span>
+      </div>
+      <div class="wallet-cell border-t">
+        <div class="wallet-cell-info ellipsis">很长的文案很长的文案很长的文案很长的文案很长的文案很长的文案很长的文案</div>
+        <span class="text-tip ">配送中</span>
+      </div>
+    </div>
+    <div class="hd text-link">带有连接的， 点击有触发状态</div>
+    <div class="wallet-list border-t">
+      <a class="wallet-cell wallet-cell-link">
+        <div class="border-b wallet-cell">
+          <div class="wallet-cell-info ">已选 <span class="text-tip">多效水嫩，1个</span></div>
+          <i class="iconfont icon-arrow-right "></i>
+        </div>
+      </a>
+      <a class="wallet-cell wallet-cell-link">
+        <div class="border-b wallet-cell">
+          <div class="wallet-cell-info ">已选 <span class="text-tip">多效水嫩，1个</span></div>
+          <span class=" text-tip">请选择 <i class="iconfont icon-arrow-right "></i></span>
+        </div>
+      </a>
+    </div>
+    <p class="hd text-link">商品</p>
+    <div class="wallet-list">
+      <a href="javascript:;" class="wallet-cell wallet-cell-link border-t">
+        <div class="border-b wallet-cell">
+          <img class="goods-img" src="http://img13.360buyimg.com/imgb/s210x210_jfs/t3202/222/699578535/10541/d4827bf0/57bd8152N2a39c37b.jpg" alt="">
+          <div class="wallet-cell-info ">
+            <h2 class="ellipsis2 goods-title">未来家美甲器指甲剪套装修指甲工具剪指甲刀眉毛夹7件套装指甲钳不锈钢新品 随机颜色发货</h2>
+            <p class="text-tip goods-desc ellipsis">描述描述描述描述描述，描述描述</p>
+            <p>1件</p>
+          </div>
+
+        </div>
+      </a>
+
+      <a href="javascript:;" class="wallet-cell wallet-cell-link border-t">
+        <div class="border-b wallet-cell">
+
+          <div class="wallet-cell-info ">
+            <h2 class="ellipsis2 goods-title">未来家美甲器指甲剪套装修指甲工具剪指甲刀眉毛夹7件套装指甲钳不锈钢新品 随机颜色发货</h2>
+            <p class="text-tip goods-desc ellipsis">描述描述描述描述描述，描述描述</p>
+            <p>1件</p>
+          </div>
+          <img class="goods-img" src="http://img13.360buyimg.com/imgb/s210x210_jfs/t3202/222/699578535/10541/d4827bf0/57bd8152N2a39c37b.jpg" alt="">
+        </div>
+      </a>
+    </div>
+
+
+
+</body>
+<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+var navToggleBtn = document.querySelector('.nav-toggle'),
+    navPanel = document.querySelector('.nav-panel');
+navToggleBtn.addEventListener('click', function (){
+  var _class = navPanel.className;
+  var isHidden = _class.indexOf('hidden')>-1;
+  isHidden?(navPanel.className = _class.replace('hidden', '')):(navPanel.className = _class+' hidden')
+}, false)
+</script>
+</html>

@@ -1,0 +1,36 @@
+// 字体
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-18:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-17:            ceil(($font-size-base * 1.2)) !default; // ~17px
+$font-size-16:            ceil(($font-size-base * 1.1)) !default; // ~16px
+$font-size-15:            ceil(($font-size-base * 1.07)) !default; // ~15px
+$font-size-14:            $font-size-base !default;
+$font-size-12:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+
+// 字体颜色
+$text-main: #333333; //
+$text-secondary: #666666;
+$text-thirdly: #999999;
+$text-input-tip: #cccccc;
+$text-white: #fff;
+$text-link: #0077ff;
+$text-light-red: #f15353;
+$text-red: #a83a3a;
+
+
+// 背景色
+$bg-light-gray: #eee;
+$bg-gray: #ddd;
+$bg-light-yellow: #fffbde;
+$bg-red: #f15353;
+$bg-deep-red: #a83a3a;

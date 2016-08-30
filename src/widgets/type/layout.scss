@@ -1,0 +1,47 @@
+/**
+ * 布局
+ */
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+.clearfix{
+  &:after{
+    display: table;
+    content: ' ';
+    clear: both;
+  }
+  &:before{
+    display: table;
+    content: ' ';
+  }
+}
+.hidden{
+  display: none !important;
+}
+
+// padding
+// padding-left : 30px;设计稿上的30px的间隔
+.pd-l-30{
+  padding-left: .3rem;
+}
+.pd-r-30{
+  padding-right: .3rem;
+}
+
+// margin
+
+// margin-left: 30px;
+.mg-l-30{
+  margin-left: .3rem;
+}
+.mg-r-30{
+  margin-right: .3rem;
+}
+.mg-b-20{
+  margin-bottom: .2rem;
+}

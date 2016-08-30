@@ -1,0 +1,36 @@
+/**
+ * 列表单元
+ */
+
+.wallet-list{
+  position: relative;
+  .wallet-cell{
+    margin-left: .3rem;
+    padding: .25rem .3rem .25rem 0;
+    display: flex;
+    align-items: center;
+
+  }
+  .wallet-cell-link{
+    display: block;
+    color: $text-main;
+    margin-left: 0;
+    padding: 0 0 0 .3rem;
+    &.wallet-cell{
+      margin-left: 0;
+      padding-left: 0;
+    }
+    &:active{
+      background: $bg-light-gray;
+
+    }
+  }
+  .wallet-cell-info{
+    flex:1;
+  }
+  // 垂直方向 顶部对齐
+  .align-top{
+    align-items: flex-start;
+  }
+
+}

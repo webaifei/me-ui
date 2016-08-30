@@ -1,0 +1,96 @@
+/**
+ * button 样式
+ */
+
+.btn{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.14rem;
+  padding-right: 0.14rem;
+  border-radius: .12rem;
+  text-align: center;
+  background:#fff;
+  line-height: .92rem;
+  color: $text-white;
+  font-size: $font-size-16;
+  color: $text-light-red;
+  z-index: 1;
+  &:after{
+    border-radius: .12rem;
+
+  }
+  &.btn-rect{
+    border-radius: 0rem;
+    &:after{
+      border-radius: 0rem;
+    }
+  }
+  &:active{
+    background: $bg-gray;
+  }
+  &.no-br{
+    border-radius: 0;
+    &:after{
+      border-radius: 0;
+    }
+  }
+
+  &.btn-small{
+    display: inline-block;
+    font-size: $font-size-12;
+    line-height: .6rem;
+  }
+
+
+}
+// .btn-full{
+//   display: block;
+//   position: relative;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 0.14rem;
+//   padding-right: 0.14rem;
+//
+//   text-align: center;
+//   background:#fff;
+//   line-height: .92rem;
+//   color: $text-white;
+//   font-size: $font-size-16;
+//   color: $text-light-red;
+//   z-index: 1;
+//   border-radius: 0;
+//   &:after{
+//     border-radius: 0;
+//     border:none;
+//   }
+//
+//
+// }
+
+.btn-primary{
+  color: $text-secondary;
+
+  &:active{
+    background: $bg-gray;
+  }
+}
+.btn-success{
+  background: $bg-red;
+  color:  $text-white;
+  &:after{
+    border: 1px solid $bg-red;
+  }
+  &:active{
+    background: $bg-deep-red;
+  }
+}
+.btn-disabled{
+  color: $text-thirdly;
+  background: $bg-gray;
+  border-color: $bg-gray;
+  &:active{
+    background: $bg-gray;
+  }
+}

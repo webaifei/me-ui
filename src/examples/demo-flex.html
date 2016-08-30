@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <title>钱包ui flex布局</title>
+  <script src="../scripts/rem.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="/styles/wallet-ui.css">
+  <link rel="stylesheet" href="../css/default.css" >
+  <style>
+  .container{
+    padding: .2rem;
+  }
+  .item{
+    padding: 10px 0;
+    line-height: 20px;
+  }
+  .hd{
+    padding:.2rem .3rem;
+    /*background: #ccc;*/
+  }
+  .input-name{
+    width: 2rem;
+  }
+  .row{
+    height: 46px;
+    padding-left: .3rem;
+  }
+  </style>
+  <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js" charset="utf-8"></script>
+</head>
+<body>
+  <nav class="ui-container border-b clearfix">
+    <a href="index.html" class="fl">WALLET</a>
+    <a href="javascript:;" class="fr nav-toggle">导航</a>
+  </nav>
+  <ul class="hidden nav-panel">
+    <li>
+      <a href="./demo1.html">基本样式</a>
+    </li>
+    <li>
+      <a href="./demo2.html">按钮</a>
+    </li>
+    <li>
+      <a href="./demo3.html">弹窗</a>
+    </li>
+    <li>
+      <a href="./demo4.html">icons</a>
+    </li>
+    <li>
+      <a href="./demo5.html">表单</a>
+    </li>
+    <li>
+      <a href="./demo6.html">列表单元 cell</a>
+    </li>
+  </ul>
+  <h1 class="text-center hd">flex布局</h1>
+  <pre><code>
+    .flex-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .flex-container .flex-item {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+  </code></pre>
+  <div class="hd text-link">
+    使用.flex-container的单行布局
+  </div>
+  <div class="flex-container border-tb row">
+    城市
+  </div>
+  <div class="hd text-link">
+    使用 .flex-container 和 .flex-item实现左右结构
+
+  </div>
+  <div class="flex-container border-tb" style="padding:.2rem .3rem;">
+    <div class="flex-item">京东配送</div>
+    <span class="text-tip">当天到</span>
+  </div>
+  <div class="hd text-link">
+    左中右布局
+  </div>
+  <div class="flex-container border-tb" style="padding:.2rem .3rem;">
+    <span class="text-important" style="margin-right:10px;">有货</span>
+    <div class="flex-item" style="background:#ccc">北京市昌平区沙河地铁站五点家园</div>
+    <i class="iconfont icon-tip"></i>
+  </div>
+  <div class="hd text-link">
+    按钮布局
+  </div>
+  <div class="flex-container border-t" style="height:50px;">
+    <a href="javascript:;" class="flex-item text-center">
+       <div>
+         <i class="iconfont icon-star"></i>
+          <p>夺宝</p>
+       </div>
+    </a>
+    <a href="javascript:;" class="flex-item text-center">
+      <div>
+         <i class="iconfont icon-star"></i>
+          <p>中奖</p>
+       </div>
+    </a>
+    <a href="javascript:;" class="flex-item text-center">
+      <div>
+         <i class="iconfont icon-star"></i>
+          <p>夺宝纪录</p>
+       </div>
+    </a>
+
+  </div>
+  <br>
+</body>
+<script src="../scripts/highlight.js" charset="utf-8"></script>
+<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js" charset="utf-8"></script>
+<script>
+var navToggleBtn = document.querySelector('.nav-toggle'),
+    navPanel = document.querySelector('.nav-panel');
+navToggleBtn.addEventListener('click', function (){
+  var _class = navPanel.className;
+  var isHidden = _class.indexOf('hidden')>-1;
+  isHidden?(navPanel.className = _class.replace('hidden', '')):(navPanel.className = _class+' hidden')
+}, false)
+// 代码高亮
+$('pre code').each(function(i, block) {
+  hljs.highlightBlock(block);
+
+});
+</script>
+
+
+</html>

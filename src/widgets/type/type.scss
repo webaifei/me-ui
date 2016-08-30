@@ -1,0 +1,92 @@
+/**
+ * Typography
+ *
+ */
+.ui-container{
+  padding-left: .3rem;
+  padding-right: .3rem;
+}
+ h1, h2, h3, h4, h5,
+ .h1, .h2, .h3, .h4, .h5{
+   color: $text-main;
+   font-weight: normal;
+ }
+h1,.h1{
+  font-size: $font-size-17;
+}
+
+h2,.h2{
+  font-size: $font-size-16;
+}
+h3,.h3{
+  font-size: $font-size-15;
+}
+
+h4,.h4{
+  font-size: $font-size-14;
+}
+
+h5,.h5{
+  font-size: $font-size-12;
+}
+p{
+  font-size: $font-size-base;
+}
+
+small, .small{
+  font-size: $font-size-12;
+}
+strong,.strong{
+  font-weight: 600;
+}
+b, .italics{
+  font-style: italic;
+}
+
+sub,.sub{
+  font-size: $font-size-12;
+  color: $text-thirdly;
+  vertical-align: baseline;
+
+}
+code{
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+// Emphasis text
+.text-default{
+  color: $text-main;
+}
+.text-error,
+.text-important{
+  color: $text-light-red;
+}
+.text-tip{
+  color: $text-thirdly;
+}
+.text-white{
+  color: $text-white;
+}
+.text-link{
+  color: $text-link;
+}
+.ellipsis{
+  @include ellipsis();
+}
+.ellipsis2{
+  @include ellipsis(2);
+}
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
