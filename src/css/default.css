@@ -141,3 +141,7 @@ xmp{
   background: #23241f;
   color: #fff;
 }
+a[href="index.html"]{
+  color: #f15353;
+  font-weight: 600;
+}

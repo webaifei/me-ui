@@ -13,3 +13,8 @@
         padding-right: .1rem;
     }
 }
+
+// 可以使用.input-switch mixin构建自己的样式
+.input-switch {
+    @include input-switch;
+}
