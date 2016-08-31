@@ -1,109 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=0">
-  <title>钱包ui 表单</title>
-  <script src="../scripts/rem.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="/styles/wallet-ui.css">
-  <link rel="stylesheet" href="../css/default.css" >
-  <style>
-  .container{
-    padding: .2rem;
-  }
-  .item{
-    padding: 10px 0;
-    line-height: 20px;
-  }
-  .hd{
-    padding:.2rem .3rem;
-    /*background: #ccc;*/
-  }
-  .input-name{
-    width: 2rem;
-  }
-  </style>
-  <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js" charset="utf-8"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <title>钱包ui 表单</title>
+    <script src="../scripts/rem.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/styles/wallet-ui.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <style>
+        .container {
+            padding: .2rem;
+        }
+
+        .item {
+            padding: 10px 0;
+            line-height: 20px;
+        }
+
+        .hd {
+            padding: .2rem .3rem;
+            /*background: #ccc;*/
+        }
+
+        .input-name {
+            width: 2rem;
+        }
+    </style>
+    <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js" charset="utf-8"></script>
 </head>
+
 <body>
-  <nav class="ui-container border-b clearfix">
-    <a href="index.html" class="fl">WALLET</a>
-    <a href="javascript:;" class="fr nav-toggle">导航</a>
-  </nav>
-  <ul class="hidden nav-panel">
-    <li>
-      <a href="./demo1.html">基本样式</a>
-    </li>
-    <li>
-      <a href="./demo2.html">按钮</a>
-    </li>
-    <li>
-      <a href="./demo3.html">弹窗</a>
-    </li>
-    <li>
-      <a href="./demo4.html">icons</a>
-    </li>
-    <li>
-      <a href="./demo5.html">表单</a>
-    </li>
-    <li>
-      <a href="./demo6.html">列表单元 cell</a>
-    </li>
-  </ul>
-  <h1 class="text-center hd">表单</h1>
+    <nav class="ui-container border-b clearfix">
+        <a href="index.html" class="fl">WALLET</a>
+        <a href="javascript:;" class="fr nav-toggle">导航</a>
+    </nav>
+    <ul class="hidden nav-panel">
+      <li>
+        <a href="./demo1.html">基本样式</a>
+      </li>
+      <li>
+        <a href="./demo2.html">按钮</a>
+      </li>
+      <li>
+        <a href="./demo3.html">弹窗</a>
+      </li>
+      <li>
+        <a href="./demo4.html">icons</a>
+      </li>
+      <li>
+        <a href="./demo-flex.html">flex 布局</a>
+      </li>
+      <li>
+        <a href="./demo5.html">表单</a>
+      </li>
+      <li>
+        <a href="./demo6.html">列表单元 cell</a>
+      </li>
+    </ul>
+    <h1 class="text-center hd">表单</h1>
+    <p class="container">
+      基于flex布局， 完全可以使用.flex-container 和 .flex-item 来实现;
+    </p>
 
-  <div class="wallet-form">
-    <div class="wallet-list border-t">
-      <div class="wallet-cell border-b">
-        <span class="input-name">收货人</span>
-        <div class="wallet-cell-info">
-          <input type="text" placeholder="收货人姓名">
-        </div>
-        <i class="iconfont icon-error"></i>
-      </div>
-      <div class="wallet-cell border-b">
-        <span class="input-name">手机号</span>
-        <div class="wallet-cell-info">
-          <input type="text" placeholder="联系电话">
-        </div>
-        <i class="iconfont icon-error hidden"></i>
-      </div>
-      <div class="wallet-cell wallet-cell-link">
-        <div class="wallet-cell border-b">
-            <span class="input-name">所在城市</span>
-            <div class="wallet-cell-info">
-              <p class="text-tip">请选择所在城市</p>
+    <div class="wallet-form">
+        <div class="wallet-list border-t">
+            <div class="wallet-cell border-b">
+                <span class="input-name">收货人</span>
+                <div class="wallet-cell-info">
+                    <input type="text" placeholder="收货人姓名">
+                </div>
+                <i class="iconfont icon-error"></i>
             </div>
-            <i class="iconfont icon-arrow-right"></i>
-        </div>
-      </div>
-      <div class="wallet-cell align-top">
-        <span class="input-name">详细地址</span>
-        <div class="wallet-cell-info">
-          <textarea ></textarea>
-        </div>
-      </div>
+            <div class="wallet-cell border-b">
+                <span class="input-name">手机号</span>
+                <div class="wallet-cell-info">
+                    <input type="text" placeholder="联系电话">
+                </div>
+                <i class="iconfont icon-error hidden"></i>
+            </div>
+            <div class="wallet-cell wallet-cell-link">
+                <div class="wallet-cell border-b">
+                    <span class="input-name">所在城市</span>
+                    <div class="wallet-cell-info">
+                        <p class="text-tip">请选择所在城市</p>
+                    </div>
+                    <i class="iconfont icon-arrow-right"></i>
+                </div>
+            </div>
+            <div class="wallet-cell align-top">
+                <span class="input-name">详细地址</span>
+                <div class="wallet-cell-info">
+                    <textarea></textarea>
+                </div>
+            </div>
+            <div class="wallet-cell">
+                <span class="wallet-cell-info">设置为默认收货地址</span>
+                <label class="input-switch">
+                    <input type="checkbox" />
+                    <div class="track">
+                        <span class="handle"></span>
+                    </div>
+                </label>
 
-      <div class="ui-container"><a href="javascript:;" class="btn btn-success">确定</a></div>
+            </div>
+            <div class="ui-container"><a href="javascript:;" class="btn btn-success">确定</a></div>
+        </div>
     </div>
-  </div>
 
 </body>
 <script src="../scripts/highlight.js" charset="utf-8"></script>
 <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js" charset="utf-8"></script>
 <script>
-var navToggleBtn = document.querySelector('.nav-toggle'),
-    navPanel = document.querySelector('.nav-panel');
-navToggleBtn.addEventListener('click', function (){
-  var _class = navPanel.className;
-  var isHidden = _class.indexOf('hidden')>-1;
-  isHidden?(navPanel.className = _class.replace('hidden', '')):(navPanel.className = _class+' hidden')
-}, false)
-// 代码高亮
-$('pre code').each(function(i, block) {
-  hljs.highlightBlock(block);
+    var navToggleBtn = document.querySelector('.nav-toggle'),
+        navPanel = document.querySelector('.nav-panel');
+    navToggleBtn.addEventListener('click', function() {
+            var _class = navPanel.className;
+            var isHidden = _class.indexOf('hidden') > -1;
+            isHidden ? (navPanel.className = _class.replace('hidden', '')) : (navPanel.className = _class + ' hidden')
+        }, false)
+        // 代码高亮
+    $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
 
-});
+    });
 </script>
 
 </html>

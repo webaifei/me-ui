@@ -2,14 +2,14 @@
  * form结构
  */
 
-.wallet-form{
-  textarea{
-    display: block;
-    width: 100%;
-    resize: none;
-  }
-  .wallet-cell-info>input{
-    width: 100%;
-    padding-right: .1rem;
-  }
+.wallet-form {
+    textarea {
+        display: block;
+        width: 100%;
+        resize: none;
+    }
+    .wallet-cell-info>input {
+        width: 100%;
+        padding-right: .1rem;
+    }
 }

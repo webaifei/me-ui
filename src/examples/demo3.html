@@ -1,142 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=0">
-  <title>钱包ui 弹窗</title>
-  <script src="../scripts/rem.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="/styles/wallet-ui.css">
-  <link rel="stylesheet" href="../css/default.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <title>钱包ui 弹窗</title>
+    <script src="../scripts/rem.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/styles/wallet-ui.css">
+    <link rel="stylesheet" href="../css/default.css">
 </head>
+
 <body>
-  <nav class="ui-container border-b clearfix">
-    <a href="index.html" class="fl">WALLET</a>
-    <a href="javascript:;" class="fr nav-toggle">导航</a>
-  </nav>
-  <ul class="hidden nav-panel">
-    <li>
-      <a href="./demo1.html">基本样式</a>
-    </li>
-    <li>
-      <a href="./demo2.html">按钮</a>
-    </li>
-    <li>
-      <a href="./demo3.html">弹窗</a>
-    </li>
-    <li>
-      <a href="./demo4.html">icons</a>
-    </li>
-    <li>
-      <a href="./demo5.html">表单</a>
-    </li>
-    <li>
-      <a href="./demo6.html">列表单元 cell</a>
-    </li>
-  </ul>
-  <div class="container">
-    <h1 class="text-center">弹窗</h1>
-    <ul style="margin-top:20px;">
-      <li class="item border-b"  data-type="alert"><a href="javascript:;">
-        一个确定按钮的提示弹窗
-        </a>
+    <nav class="ui-container border-b clearfix">
+        <a href="index.html" class="fl">WALLET</a>
+        <a href="javascript:;" class="fr nav-toggle">导航</a>
+    </nav>
+    <ul class="hidden nav-panel">
+      <li>
+        <a href="./demo1.html">基本样式</a>
       </li>
-      <li class="item border-b" data-type="confirm">
-        <a href="javascript:;">带有确定和取消按钮弹窗</a>
+      <li>
+        <a href="./demo2.html">按钮</a>
       </li>
-      <li class="item border-b" data-type="select">
-        <a href="javascript:;">多个操作选择的弹窗</a>
+      <li>
+        <a href="./demo3.html">弹窗</a>
+      </li>
+      <li>
+        <a href="./demo4.html">icons</a>
+      </li>
+      <li>
+        <a href="./demo-flex.html">flex 布局</a>
+      </li>
+      <li>
+        <a href="./demo5.html">表单</a>
+      </li>
+      <li>
+        <a href="./demo6.html">列表单元 cell</a>
       </li>
     </ul>
-
-    <!-- pop  -->
-    <div class="dialog-alert dialog-pop hidden">
-      <div class="mask"></div>
-      <div class="dialog">
+    <div class="container">
+        <h1 class="text-center">弹窗</h1>
+        <ul style="margin-top:20px;">
+            <li class="item border-b" data-type="alert">
+                <a href="javascript:;">
+                一个确定按钮的提示弹窗
+                </a>
+            </li>
+            <li>
+              <xmp>
+<!-- 最外层的class自己，不是必须的 -->
+<div class="dialog-alert dialogPop hidden">
+    <div class="mask"></div>
+    <div class="dialog">
         <div class="dialog-body">
-          <h1 class="strong">标题标题标题标题标题标</h1>
-          <p>说明文案说明文案说明文案，说明文案说明文案，</p>
+            <h1 class="strong">标题标题标题标题标题标</h1>
+            <p>说明文案说明文案说明文案，说明文案说明文案，</p>
         </div>
         <div class="dialog-footer border-t">
-          <a href="javascript:;" class="dialog-btn text-error">确定</a>
+            <a href="javascript:;" class="dialog-btn text-error">确定</a>
         </div>
-      </div>
     </div>
-    <!-- 两个按钮 -->
-    <div class="dialog-confirm dialog-pop hidden">
-      <div class="mask"></div>
-      <div class="dialog">
-        <div class="dialog-body">
+</div>
+              </xmp>
+            </li>
+            <li class="item border-b" data-type="confirm">
+                <a href="javascript:;">带有确定和取消按钮弹窗</a>
+
+            </li>
+            <li>
+              <xmp>
+<!-- 最外层的class自己，不是必须的 -->
+<div class="dialog-confirm dialogPop hidden">
+  <div class="mask"></div>
+  <div class="dialog">
+      <div class="dialog-body">
           <h1 class="strong">确认使用该地址？</h1>
-        </div>
-        <div class="dialog-footer border-t">
+      </div>
+      <div class="dialog-footer border-t">
           <a href="javascript:;" class="dialog-btn text-error">取消</a>
           <a href="javascript:;" class="dialog-btn text-error border-l">确定</a>
-        </div>
       </div>
-    </div>
-    <!-- 多个选项 -->
-    <div class="dialog-select dialog-pop hidden">
-      <div class="mask"></div>
-      <div class="dialog">
+  </div>
+</div>
+            </xmp>
+            </li>
+            <li class="item border-b" data-type="select">
+                <a href="javascript:;">多个操作选择的弹窗</a>
+            </li>
+            <li>
+              <xmp>
+<!-- 最外层的class自己，不是必须的 -->
+<div class="dialog-select dialogPop hidden">
+    <div class="mask"></div>
+    <div class="dialog">
         <div class="dialog-body">
-          <h1 class="strong">您所选择的收货地址无货</h1>
-          <p>您可以有如下选择</p>
+            <h1 class="strong">您所选择的收货地址无货</h1>
+            <p>您可以有如下选择</p>
 
         </div>
         <a href="javascript:;" class="btn btn-full border-t strong text-error">兑换等值的京东E卡</a>
         <a href="javascript:;" class="btn btn-full border-t text-error">等待京东补货</a>
         <div class="dialog-footer border-t">
-          <a href="javascript:;" class="dialog-btn text-error">取消</a>
+            <a href="javascript:;" class="dialog-btn text-error">取消</a>
         </div>
-      </div>
     </div>
-  </div>
+</div>
+              </xmp>
+            </li>
+        </ul>
+
+        <!-- pop  -->
+        <div class="dialog-alert dialogPop hidden">
+            <div class="mask"></div>
+            <div class="dialog">
+                <div class="dialog-body">
+                    <h1 class="strong">标题标题标题标题标题标</h1>
+                    <p>说明文案说明文案说明文案，说明文案说明文案，</p>
+                </div>
+                <div class="dialog-footer border-t">
+                    <a href="javascript:;" class="dialog-btn text-error">确定</a>
+                </div>
+            </div>
+        </div>
+        <!-- 两个按钮 -->
+        <div class="dialog-confirm dialogPop hidden">
+            <div class="mask"></div>
+            <div class="dialog">
+                <div class="dialog-body">
+                    <h1 class="strong">确认使用该地址？</h1>
+                </div>
+                <div class="dialog-footer border-t">
+                    <a href="javascript:;" class="dialog-btn text-error">取消</a>
+                    <a href="javascript:;" class="dialog-btn text-error border-l">确定</a>
+                </div>
+            </div>
+        </div>
+        <!-- 多个选项 -->
+        <div class="dialog-select dialogPop hidden">
+            <div class="mask"></div>
+            <div class="dialog">
+                <div class="dialog-body">
+                    <h1 class="strong">您所选择的收货地址无货</h1>
+                    <p>您可以有如下选择</p>
+
+                </div>
+                <a href="javascript:;" class="btn btn-full border-t strong text-error">兑换等值的京东E卡</a>
+                <a href="javascript:;" class="btn btn-full border-t text-error">等待京东补货</a>
+                <div class="dialog-footer border-t">
+                    <a href="javascript:;" class="dialog-btn text-error">取消</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="../scripts/highlight.js" charset="utf-8"></script>
 <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js" charset="utf-8"></script>
 <script src="../scripts/zeroclipboard.js" charset="utf-8"></script>
 <script>
-  var navToggleBtn = document.querySelector('.nav-toggle'),
-      navPanel = document.querySelector('.nav-panel');
-  navToggleBtn.addEventListener('click', function (){
-    var _class = navPanel.className;
-    var isHidden = _class.indexOf('hidden')>-1;
-    isHidden?(navPanel.className = _class.replace('hidden', '')):(navPanel.className = _class+' hidden')
-  }, false)
-  // 代码高亮
-  $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
+    var navToggleBtn = document.querySelector('.nav-toggle'),
+        navPanel = document.querySelector('.nav-panel');
+    navToggleBtn.addEventListener('click', function() {
+            var _class = navPanel.className;
+            var isHidden = _class.indexOf('hidden') > -1;
+            isHidden ? (navPanel.className = _class.replace('hidden', '')) : (navPanel.className = _class + ' hidden')
+        }, false)
+        // 代码高亮
+    $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
 
-  });
-  $('.container .item').on('click', function (e){
-    var type = e.currentTarget.getAttribute('data-type');
-    $('.dialog-'+type).toggleClass('hidden');
-  })
-  $('div[class^="dialog-po"]').each(function (){
-    var _this = $(this);
-    _this.find('.dialog-btn').on('click', function (){
-      _this.toggleClass('hidden')
+    });
+    $('.container .item').on('click', function(e) {
+        var type = e.currentTarget.getAttribute('data-type');
+        $('.dialog-' + type).toggleClass('hidden');
     })
-  })
-  $('.mask').on('click', function (){
-    $(this).parent().toggleClass('hidden')
-  })
-  // 复制代码
-  var client = new ZeroClipboard( document.getElementsByClassName('copy') );
-  client.on( "ready", function( readyEvent ) {
-    client.on( "copy", function( event ){
-      // `this` === `client`
-      // `event.target` === the element that was clicked
-      // event.target.style.display = "none";
-      var clipboard = event.clipboardData;
-      var str = $(event.target).parents('.item').find('a.btn')[0].outerHTML;
-      console.log(str)
-      clipboard.setData( "text/plain",str );
-    } );
-    client.on( 'aftercopy', function(event) {
-      console.log('Copied text to clipboard: ' + event.data['text/plain']);
-       } );
-  } );
+    $('div[class~="dialogPop"]').each(function() {
+        var _this = $(this);
+        _this.find('.dialog-btn').on('click', function() {
+            _this.toggleClass('hidden')
+        })
+    })
+    $('.mask').on('click', function() {
+          $(this).parent().toggleClass('hidden')
+      })
+        // 复制代码
+    var client = new ZeroClipboard(document.getElementsByClassName('copy'));
+    client.on("ready", function(readyEvent) {
+        client.on("copy", function(event) {
+            // `this` === `client`
+            // `event.target` === the element that was clicked
+            // event.target.style.display = "none";
+            var clipboard = event.clipboardData;
+            var str = $(event.target).parents('.item').find('a.btn')[0].outerHTML;
+            console.log(str)
+            clipboard.setData("text/plain", str);
+        });
+        client.on('aftercopy', function(event) {
+            console.log('Copied text to clipboard: ' + event.data['text/plain']);
+        });
+    });
 </script>
 
 </html>

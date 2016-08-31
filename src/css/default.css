@@ -94,6 +94,7 @@ li{
 }
 nav{
   line-height: 50px;
+  margin-bottom: 15px;
 }
 .item{
   padding:.2rem .3rem;
@@ -134,4 +135,9 @@ nav{
 .goods-desc{
   margin-bottom: .2rem;
 }
-.
+xmp{
+  width: 100%;
+  overflow-x: scroll;
+  background: #23241f;
+  color: #fff;
+}
