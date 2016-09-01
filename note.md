@@ -1,6 +1,23 @@
 ## ui框架遇到的问题总结
 
 1. font-family
+  字体基本上分为四大类： serif(衬线字体) sans-serif(无衬线字体) monospace（等款）fantasy(梦幻) cuisive（草体）
+  一般网页排版中大多使用sans-serif 无衬线字体 常见的有： Helvetica Arial Lucida Family Verdana Tahoma
+
+  * Arial， Helvetica 等是不支持中文的
+  * 设置的字体不支持中文的话 就会使用系统默认的中文字体
+  * 设置的字体不支持英文的话 就会使用系统默认的英文字体
+  * 在设置字体的最后一般加上一个类型的字体 如：sans-serif 这样的话 即使我们前面声明的字体都没有也会找一个无衬线的字体 
+
+  各大网站m站的设置：
+  jd.com      font-family: PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;
+  
+  qq.com      font-family: Helvetica,STHeiti,Droid Sans Fallback;
+  baidu.com   font-family: Arial, Helvetica, sans-serif;
+  taobao.com  font-family: sans-serif; （牛逼）
+  tmall.com   font-family: Helvetica,sans-serif; (一家的啊)
+
+  touch.qunar.com font-family: arial; (这个有点淡定！)
 2. 使用rem的时候，html上的font-size基础值在安卓上 不能小于12px
 3. ios上的a:active 样式不显示  在body上添加ontouchstart
 
@@ -43,6 +60,7 @@
   .flex-container {
     display: -webkit-box; /* 09年规范 兼容uc */
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;        /* 最新规范 */
     /* 垂直居中 */
     -webkit-box-align: center;
