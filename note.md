@@ -16,6 +16,7 @@
   4. taobao.com  font-family: sans-serif; （牛逼）
   5. tmall.com   font-family: Helvetica,sans-serif; (一家的啊)
   6. touch.qunar.com font-family: arial; (这个有点淡定！)
+  
 2. 使用rem的时候，html上的font-size基础值在安卓上 不能小于12px
 3. ios上的a:active 样式不显示  在body上添加ontouchstart
 
