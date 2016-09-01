@@ -9,14 +9,14 @@
   * 设置的字体不支持英文的话 就会使用系统默认的英文字体
   * 在设置字体的最后一般加上一个类型的字体 如：sans-serif 这样的话 即使我们前面声明的字体都没有也会找一个无衬线的字体 
 
-  各大网站m站的设置：
+  各大网站m站的设置：（pc站上设置相对都是简单一点，一般设置一个英文字体和一个中文字体就行，有的甚至都不设置中文字体）
   1. jd.com      font-family: PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;
   2. qq.com      font-family: Helvetica,STHeiti,Droid Sans Fallback;
   3. baidu.com   font-family: Arial, Helvetica, sans-serif;
   4. taobao.com  font-family: sans-serif; （牛逼）
   5. tmall.com   font-family: Helvetica,sans-serif; (一家的啊)
   6. touch.qunar.com font-family: arial; (这个有点淡定！)
-  
+
 2. 使用rem的时候，html上的font-size基础值在安卓上 不能小于12px
 3. ios上的a:active 样式不显示  在body上添加ontouchstart
 
