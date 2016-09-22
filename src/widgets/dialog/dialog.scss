@@ -2,54 +2,51 @@
  * 弹窗
  */
 
-.mask{
- width: 100%;
- height: 100%;
- position: fixed;
- top:0;
- left: 0;
- background: rgba(0, 0, 0, .4);
-
+.mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
 }
 
-.dialog{
-  width: 5.4rem;
-  position: fixed;
-  top:50%;
-  left: 50%;
-  overflow: hidden;
-  transform: translate3d(-50%, -50%, 0);
-  background: #fff;
-  border-radius: 0.08rem;
-  text-align: center;
-  @at-root  .dialog-body{
-    padding:.36rem .3rem 0;
-    h1{
-      margin-bottom:.25rem;
+.dialog {
+    width: 5.4rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate3d(-50%, -50%, 0);
+    background: #fff;
+    border-radius: 0.08rem;
+    text-align: center;
+    @at-root .dialog-body {
+        padding: .36rem .3rem 0;
+        h1 {
+            margin-bottom: .25rem;
+        }
+        p {
+            margin-bottom: .25rem;
+        }
     }
-    p{
-      margin-bottom: .25rem;
+    @at-root .dialog-footer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        line-height: .88rem;
+        &:after {
+            border-bottom-right-radius: .08rem;
+            border-bottom-left-radius: .08rem;
+        }
+        .dialog-btn {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+            z-index: 1;
+            &:active {
+                background: $bg-gray;
+            }
+        }
     }
-  }
-  @at-root .dialog-footer{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    line-height: .88rem;
-    &:after{
-      border-bottom-right-radius: .08rem;
-      border-bottom-left-radius: .08rem;
-    }
-    .dialog-btn{
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      flex: 1;
-      z-index: 1;
-      &:active{
-        background: $bg-gray;
-      }
-    }
-
-  }
-
 }

@@ -1,7 +1,7 @@
 {
-  "name": "wallet-ui",
+  "name": "me-ui",
   "version": "1.0.0",
-  "description": "wallet ui",
+  "description": "me ui",
   "main": "gulp.babel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
